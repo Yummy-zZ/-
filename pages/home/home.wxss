@@ -1,0 +1,85 @@
+/* 轮播图 */
+/* 导航区域 */
+.navContainer {
+  display: flex;
+}
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+}
+.navItem image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx 0 0 0;
+}
+.navItem text {
+  font-size: 26rpx;
+}
+/* 推荐 */
+.recommendContainer {
+  padding: 20rpx;
+}
+.scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.scrollItem image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scrollItem text {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /* 多行溢出自定义设置 */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.recommendScroll {
+  display: flex;
+  height: 300rpx;
+}
+/* 排行榜 */
+.topList{
+  padding: 24rpx;
+}
+.topListSwiper{
+  height: 400rpx;
+}
+.swiperItem{
+  width: 96%;
+  background-color: #fbfbfb;
+  border-radius: 10rpx;
+}
+.swiperItem .title{
+  font-size: 30rpx;
+  line-height: 80rpx;
+}
+.musicItem{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem image{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  border-radius: 6rpx;
+}
+.musicItem .count{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+.musicItem .musicName{
+  height: 80rpx;
+  text-decoration: black;
+  line-height: 100rpx;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

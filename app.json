@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/video/video",
+    "pages/profile/profile",
+    "components/w-nav-header/w-nav-header",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "网易云",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true,
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/images/tabbar/音乐.png",
+        "selectedIconPath": "/assets/images/tabbar/音乐(选中).png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/assets/images/tabbar/播放.png",
+        "selectedIconPath": "/assets/images/tabbar/播放(选中).png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/images/tabbar/我的.png",
+        "selectedIconPath": "/assets/images/tabbar/我的(选中).png"
+      }
+    ]
+  }
+}

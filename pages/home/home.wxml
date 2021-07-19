@@ -1,0 +1,51 @@
+<!-- 轮播图 -->
+<view class="all">
+<w-swiper images="{{bannerList}}"></w-swiper>
+<!-- 导航区域 -->
+  <view class="navContainer">
+    <view class="navItem">
+      <image src="/assets/images/home/推荐.png"></image>
+      <text>每日推荐</text>
+    </view>
+    <view class="navItem">
+      <image src="/assets/images/home/歌单.png"></image>
+      <text>歌单</text> 
+    </view>
+    <view class="navItem">
+      <image src="/assets/images/home/排行榜.png"></image>
+      <text>排行榜</text>
+    </view>
+  </view>
+
+<!-- 推荐区 -->
+  <view class="recommendContainer">
+   <w-nav-header title="推荐歌曲" subTitle="为你精心推荐"></w-nav-header>
+    <scroll-view class="recommendScroll" enable-flex scroll-x>
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem">
+        <image src="{{recommendItem.picUrl}}"></image>
+        <text>{{recommendItem.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+<!-- 排行榜 -->
+<view class="topList">
+    <w-nav-header title="排行榜" subTitle="热门风向标"></w-nav-header>
+
+    <swiper class="topListSwiper" circular next-margin="80rpx">
+      <swiper-item wx:for="{{topList}}" wx:key="name">
+        <view class="swiperItem">
+          <view class="title">{{item.name}}</view>
+          <view class="musicItem" wx:for="{{item.tracks}}" wx:key="id" wx:for-item="musicItem">
+            <image src="{{musicItem.al.picUrl}}"></image>
+            <text class="count">{{index + 1}}</text>
+            <text class="musicName">{{musicItem.name}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+
+
+
+
